@@ -12,6 +12,6 @@ This basic template uses the following libraries
 * Bootstrap 3
 
 Setup
-________
+-----
 
 Just run `./build` while you're in the root of the application and then check if it's good using `grunt server` to run the server using Yeoman's Gruntfile.js
