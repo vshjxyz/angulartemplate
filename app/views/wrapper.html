@@ -1,0 +1,25 @@
+<div class="topcoat-navigation-bar header">
+    <div class="topcoat-navigation-bar__item center full">
+        <h1 class="topcoat-navigation-bar__title">Header</h1>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="row">
+        <div class="col-md-3 navigation">
+            <input type="search" value="" placeholder="search" class="topcoat-search-input">
+            <div class="topcoat-list">
+                <h3 class="topcoat-list__header">Category</h3>
+                <ul class="topcoat-list__container">
+                    <li class="topcoat-list__item" ng-class="{ active: $state.includes('app.dashboard') }">
+                        <a ui-sref="app.dashboard">Dashboard</a>
+                    </li>
+                    <li class="topcoat-list__item" ng-class="{ active: $state.includes('app.catalog') }">
+                        <a ui-sref="app.catalog">Catalog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 content" ui-view>
+        </div>
+    </div>
+</div>
