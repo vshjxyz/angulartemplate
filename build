@@ -1,0 +1,8 @@
+#!/bin/bash
+
+npm install
+bower install
+
+cd app/bower_components/angular-latest/; npm install && grunt
+echo -e "\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-\e[94m-\e[0m-"
+echo -e "\e[94mThe project has been successfully bootstrapped. Run \e[1mgrunt server\e[0m\e[94m to run a live version of the application."
