@@ -17,7 +17,12 @@ angular.module('BaseApp', ['ngTouch', 'uiRouter', 'BaseApp.controllers']).config
   });
 });
 
-angular.module("uiRouter", ["ui.router"]).run(["$rootScope", "$state", "$stateParams", function($rootScope, $state, $stateParams) {}, $rootScope.$state = $state, $rootScope.$stateParams = $stateParams]);
+angular.module("uiRouter", ["ui.router"]).run([
+  "$rootScope", "$state", "$stateParams", function($rootScope, $state, $stateParams) {
+    $rootScope.$state = $state;
+    return $rootScope.$stateParams = $stateParams;
+  }
+]);
 
 angular.module('BaseApp.controllers', ['BaseApp.services']);
 
